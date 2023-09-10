@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbc6c6;
+}
+
+header {
+    background-color: #777777;
+    padding: 10px;
+}

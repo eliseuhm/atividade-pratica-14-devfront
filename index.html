@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Funcionários</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Página da Prática 10</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dúvidas Frequêntes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form id="funcionarioForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required><br><br>
+            
+            <label for="age">Idade:</label>
+            <input type="number" id="age" required><br><br>
+            
+            <label for="office">Cargo:</label>
+            <input type="text" id="office" required><br><br>
+            
+            <div id="departmentSection">
+                <label for="department">Departamento:</label>
+                <input type="text" id="department"><br><br>
+            </div>
+            
+            <div id="languageSection">
+                <label for="language">Linguagem de Programação:</label>
+                <input type="text" id="language"><br><br>
+            </div>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div id="resultado"></div>
+        <br>
+    </div>
+
+    <footer class="text-center bg-dark text-light">
+        <p>&copy; <span id="esteAno"></span> Eliseu H. M.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById("esteAno").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
